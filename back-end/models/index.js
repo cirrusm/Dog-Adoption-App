@@ -1,6 +1,6 @@
-const mongoose = require("mongoose")
+const mongoose = require("mongoose");
 
-const connectionString = "mongodb://localhost:27017/dogs"
+const connectionString = "mongodb://localhost:27017/dogs";
 
 const configOptions = {
   useNewUrlParser: true,
@@ -14,6 +14,7 @@ mongoose
   .then(() => console.log("MongoDB successfully connected..."))
   .catch((err) => console.log(`MongoDB connection error: ${err}`));
 
-  // module.exports = {
-
-  // }
+module.exports = {
+  Dog: require("./Dog"),
+  User: require("./User")
+};
