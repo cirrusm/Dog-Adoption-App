@@ -16,7 +16,7 @@ function DogInfo(props) {
           I am convenient because I require little markup to use effectively.</p>
         </div>
         <div className="card-action">
-          <a href="#">This is a link</a>
+          <Link to = {`/dog/${props.dog.id}`}>View this dog</Link>
         </div>
       </div>
     </div>
