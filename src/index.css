@@ -11,3 +11,52 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  width: 500px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.carousel {
+  height: fit-content;
+}
+
+.dogcards {
+  margin: 0 auto;
+}
+
+.main-nav{
+  background-color:#4D8B99;
+}
+.content {
+  width: 547px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  
+}
+
+.button-orange {
+  background-color: #F28C74;
+}
+
+body {
+  background: url('./images/pexels-la-miko-3671301.jpg')
+}
+
+.welcome {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+
+.middle-intro {
+  
+}
+
+.orange-font {
+  
+  color: #F28C74
+}
+
+
