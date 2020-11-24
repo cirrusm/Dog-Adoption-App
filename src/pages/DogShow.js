@@ -1,4 +1,13 @@
 import React, { Component } from "react";
+import Heart from '../images/Heart.png';
+import Arrow from '../images/Arrow.png';
+import Dot from '../images/Dot.png';
+import RecSmall from '../images/rec-small.png';
+import RecMed from '../images/rec-medium.png';
+import RecLarge from '../images/rec-large.png';
+
+
+
 
 class DogShow extends Component {
   state = {
@@ -58,15 +67,47 @@ class DogShow extends Component {
 
     renderPhoto = () => {
       if (this.state.dog.photos) {
-        return this.state.dog.photos[0].medium;
+        return this.state.dog.photos[0].large;
       }
   }
 
   render() {
     return (
-      <div className = 'container'>
-        <img src={this.renderPhoto()} />
-        <h1>{this.state.dog.name}</h1>
+      <div className='profile-container'>
+        <img id="heart" src={Heart} />
+        <img id="arrow" src={Arrow} />
+        <div className="basic-info">
+          <div className="row valign-wrapper">
+          <img className="profile-img" src={this.renderPhoto()} />
+          
+           <h4>{this.state.dog.name}</h4>
+          
+        <span>
+         <p>{this.state.dog.gender} </p>
+          <img id="dot" src={Dot} />
+          <p>Size: {this.state.dog.size}</p>
+          <img id="dot" src={Dot} />
+       <p>Age: {this.state.dog.age}</p>  
+       </span>
+       </div>       
+        </div>
+     
+      <div className="card" id="personality">
+               <h4>Personality: </h4>
+               <p>cheerful   <img src={RecLarge} /></p>
+               <p>peaceful   <img src={RecMed} /></p>
+               <p>cuddly   <img src={RecLarge} /></p>
+               <p>loud   <img src={RecSmall} /></p>
+        </div>
+       <div className="card" id="about">
+               <h4>PUT TAGS HERE</h4>
+        </div>
+
+         <div className="card" id="location-bio">
+               <h4>Shelter Location: </h4>
+        </div>
+     
+       
         
       </div>
     );
