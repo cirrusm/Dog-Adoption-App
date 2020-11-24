@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 
-class Profile extends Component {
+class DogShow extends Component {
   state = {  }
   render() { 
     return ( 
       <div>
-
-        <h1>Profile Page</h1>
+        Dog Show Page
       </div>
      );
   }
 }
  
-export default Profile;
+export default DogShow;

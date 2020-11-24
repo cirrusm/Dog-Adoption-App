@@ -15,7 +15,7 @@ const NavBar = (props) => {
     <Link to = '/signup'>Sign Up</Link>
   </li>
   <li>
-    <Link to ='/profile'> Profile</Link>
+    <Link to ='/dog'> Dog Profile</Link>
   </li>
 </ul>
     </div>
