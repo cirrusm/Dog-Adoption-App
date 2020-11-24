@@ -34,6 +34,7 @@ code {
   position: relative;
   top: 100px;
   left: 200px;
+  font-size: 26px;
   
 }
 
@@ -41,9 +42,6 @@ code {
   background-color: #F28C74;
 }
 
-body {
-  background: url('./images/pexels-la-miko-3671301.jpg')
-}
 
 .welcome {
   font-family: 'Righteous', cursive;

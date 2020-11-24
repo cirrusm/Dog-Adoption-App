@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom'
 import Background from '../images/pexels-la-miko-3671301.jpg'
 
 let sectionStyle = {
-  width: "100px",
-  height: "100px",
+  width: "100%",
+  height: "100%",
   backgroundImage: 'url(' + {Background} + ')'
 }
 
@@ -14,8 +14,6 @@ class Home extends Component {
   componentDidMount() {
     let key = 'rqgLcLaO8ZSjNJDMdqy1i19a3qZBrDVBrcGHHWF366C34RtFJN'
 let secret = 'kfQMxVox4kH2I7A56kwo1JPrJyoRuQEnxWHwfoDc'
-let org ="RI77"
-let status= "adoptable"
 let size="medium"
 let location = 92625
 let goodWithDogs = "true"
