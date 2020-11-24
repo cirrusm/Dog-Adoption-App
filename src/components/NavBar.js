@@ -17,6 +17,9 @@ const NavBar = (props) => {
   <li>
     <Link to ='/dog'> Dog Profile</Link>
   </li>
+  <li>
+    <Link to ='/index'> Dog Index Page</Link>
+  </li>
 </ul>
     </div>
    );
