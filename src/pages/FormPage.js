@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import {Link} from 'react-router-dom'
 import Form1 from "../components/Form1";
 import Form2 from "../components/Form2";
 import Form3 from "../components/Form3";
@@ -7,12 +8,14 @@ class FormPage extends Component {
   constructor() {
     super();
     this.state = {
-      age: '',
-      coat: '',
-      size: '',
-      location: '',
-      goodWithCats: '',
-      goodWithKids: '',
+      //Hard coded for testing
+      age: 'baby',
+      coat: 'short',
+      size: 'medium',
+      location: '92625',
+      goodWithCats: 'true',
+      goodWithKids: 'true',
+      dogs : []
 
 
     };
@@ -272,7 +275,18 @@ class FormPage extends Component {
         <span>A healthy balance</span>
       </label>
     </p>
+<Link to ={{
+  pathname: '/index',
+  aboutDog: {
+    age: this.state.age,
+    coat: this.state.coat,
+    size: this.state.size,
+    location: this.state.location,
+    goodWithCats: this.state.goodWithCats,
+    goodWithKids: this.state.goodWithKids,
 
+  }
+}}>Submit</Link>
 </form>
     </div>
     );

@@ -11,3 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.card {
+  width: 500px;
+  margin: 0 auto;
+  height: auto;
+}
+
+.carousel {
+  height: fit-content;
+}
+
+.dogcards {
+  margin: 0 auto;
+}
