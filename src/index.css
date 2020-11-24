@@ -42,18 +42,29 @@ code {
   background-color: #F28C74;
 }
 
+.brand-logo {
+  left: 100px;
+  font-family: 'Righteous', cursive;
+  
+}
+
+.home-body {
+  background: url("./images/pexels-la-miko-3671301.jpg");
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .welcome {
   font-family: 'Righteous', cursive;
   font-weight: 400;
 }
 
-.middle-intro {
-  
-}
-
 .orange-font {
-  
   color: #F28C74
 }
 
