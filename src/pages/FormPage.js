@@ -11,7 +11,9 @@ class FormPage extends Component {
       coat: '',
       size: '',
       location: '',
-      
+      goodWithCats: '',
+      goodWithKids: '',
+
 
     };
     //  this.hideComponent = this.hideComponent.bind(this)
