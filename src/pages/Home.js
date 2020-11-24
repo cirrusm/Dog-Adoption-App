@@ -7,6 +7,7 @@ class Home extends Component {
     return ( 
       <div>
         <h1>This is the home page</h1>
+        <Link to = '/formpage'>Take Survey</Link>
 
       </div>
      );

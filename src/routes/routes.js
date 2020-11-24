@@ -4,6 +4,7 @@ import Home from '../pages/Home'
 import Login from '../pages/Login'
 import Signup from '../pages/Signup'
 import DogShow from '../pages/DogShow'
+import FormPage from '../pages/FormPage'
 
 export default (
   <Switch>
@@ -11,5 +12,6 @@ export default (
     <Route exact path ='/login' component={Login}></Route>
     <Route exact path = '/signup' component={Signup}></Route>
     <Route exact path ='/dog' component={DogShow}></Route>
+    <Route exact path = '/formpage' component={FormPage}></Route>
   </Switch>
 )
