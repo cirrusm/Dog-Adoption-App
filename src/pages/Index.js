@@ -76,7 +76,12 @@ console.log('these are the dogs', this.state.dogs)
   render() {
     return(
       <div className="container dogcards">
+
         <CarouselProvider
+
+
+        <CarouselProvider
+
         naturalSlideWidth={300}
         naturalSlideHeight={500}
         totalSlides={this.state.dogs.length}
@@ -100,7 +105,7 @@ console.log('these are the dogs', this.state.dogs)
               View all Dogs in Your Area!</h4>
         </div>
       </CarouselProvider>
-        {/* <DogCards dogs={this.state.dogs} /> */}
+       
        
       </div>
     );
