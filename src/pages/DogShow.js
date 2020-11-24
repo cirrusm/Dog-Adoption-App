@@ -68,6 +68,7 @@ class DogShow extends Component {
         <img src={this.renderPhoto()} />
         <h1>{this.state.dog.name}</h1>
         
+
       </div>
     );
   }
