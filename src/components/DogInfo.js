@@ -8,16 +8,19 @@ function DogInfo(props) {
     <div className="col s12 m7">
       <div className="card">
         <div className="card-image">
+        <Link to = {`/dog/${props.dog.id}`}>
           <img src={props.dog.photos[0].medium} />
-          <span className="card-title">Card Title</span>
+        </Link>
+          <span className="card-title"></span>
         </div>
         <div className="card-content">
-          <p>I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively.</p>
+          <h5 font-weight="bold">{props.dog.name}</h5>
+          <p>{props.dog.breeds.primary}</p>
+          <p>{props.dog.gender}</p>
         </div>
-        <div className="card-action">
+        {/* <div className="card-action">
           <Link to = {`/dog/${props.dog.id}`}>View this dog</Link>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

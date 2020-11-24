@@ -68,7 +68,7 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
   renderDogs = () => {
 console.log('these are the dogs', this.state.dogs)
     return this.state.dogs.map((dog, index) => {
-      return (<DogInfo dog={dog} key={dog.id}></DogInfo>)
+      return (<Slide><DogInfo dog={dog} key={dog.id}></DogInfo></Slide>)
     });
   }
 
@@ -77,18 +77,35 @@ console.log('these are the dogs', this.state.dogs)
     return(
       <div className="container dogcards">
 
-        {/* <CarouselProvider
+        <CarouselProvider
+
+
+        <CarouselProvider
+
         naturalSlideWidth={300}
         naturalSlideHeight={500}
         totalSlides={this.state.dogs.length}
       >
-        <Slider className="card"> */}
+        <div>
+          <h4 id="match-text">These Are Your Top Matches!</h4>
+        </div>
+        <Slider className="card">
           {this.renderDogs()}
-        {/* </Slider>
-        <ButtonBack>Back</ButtonBack>
-        <ButtonNext>Next</ButtonNext>
+        </Slider>
+        <div className="carousel-buttons">
+          <div className='carousel-back-button'>
+            <ButtonBack>Back</ButtonBack>
+          </div>
+          <div className='carousel-next-button'>
+            <ButtonNext>Next</ButtonNext>
+          </div>
+        </div>
+        <div className="all-dogs-text">
+          <h4 id="view-all-text">Haven't found your perfect companion? <br></br>
+              View all Dogs in Your Area!</h4>
+        </div>
       </CarouselProvider>
-        <DogCards dogs={this.state.dogs} /> */}
+       
        
       </div>
     );
