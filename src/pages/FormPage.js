@@ -29,7 +29,7 @@ class FormPage extends Component {
     this.setState({
       [event.target.name]: event.target.value,
     });
-    console.log(this.state.group1);
+    console.log(this.state.age);
   };
   render() {
     return (
@@ -39,19 +39,19 @@ class FormPage extends Component {
 <h5>How would you describe yourself socially?</h5>
    <p>
       <label>
-        <input name="group1" type="radio" value="1" onClick={this.handleChange}/>
+        <input name="age" type="radio" value="baby" onClick={this.handleChange}/>
         <span>I'm an extrovert</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group1" type="radio" value="2" onClick={this.handleChange}/>
+        <input name="age" type="radio" value="adult" onClick={this.handleChange}/>
         <span>I'm an introvert</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group1" type="radio"  value="3" onClick={this.handleChange}/>
+        <input name="age" type="radio"  value="senior" onClick={this.handleChange}/>
         <span>Somewhere in between</span>
       </label>
     </p>
@@ -59,19 +59,19 @@ class FormPage extends Component {
     <h5>How much are you able to spend on a dogs monthly expenses?</h5>
    <p>
       <label>
-        <input name="group2" type="radio" value="1" onClick={this.handleChange}/>
+        <input name="coat" type="radio" value="short" onClick={this.handleChange}/>
         <span>$0-499 per month</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group2" type="radio" value="2" onClick={this.handleChange}/>
+        <input name="coat" type="radio" value="medium" onClick={this.handleChange}/>
         <span>$500-999 per month</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group2" type="radio"  value="3" onClick={this.handleChange}/>
+        <input name="coat" type="radio"  value="long" onClick={this.handleChange}/>
         <span>$1000+ per month</span>
       </label>
     </p>
@@ -79,19 +79,19 @@ class FormPage extends Component {
     <h5>Whats your primary reason for getting a dog?</h5>
    <p>
       <label>
-        <input name="group3" type="radio" value="1" onClick={this.handleChange}/>
+        <input name="" type="radio" value="small" onClick={this.handleChange}/>
         <span>I want a companion</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group3" type="radio" value="2" onClick={this.handleChange}/>
+        <input name="" type="radio" value="medium" onClick={this.handleChange}/>
         <span>I want a dog for protection</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group3" type="radio"  value="3" onClick={this.handleChange}/>
+        <input name="" type="radio"  value="large" onClick={this.handleChange}/>
         <span>I want a service dog</span>
       </label>
     </p>
@@ -99,19 +99,19 @@ class FormPage extends Component {
     <h5>Have you ever lived with a dog before?</h5>
    <p>
       <label>
-        <input name="group4" type="radio" value="1" onClick={this.handleChange}/>
+        <input name="good_with_cats" type="radio" value="true" onClick={this.handleChange}/>
         <span>Yes, I've owned a dog before</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group4" type="radio" value="2" onClick={this.handleChange}/>
+        <input name="good_with_cats" type="radio" value="false" onClick={this.handleChange}/>
         <span>Yes, I've shared responsibility of a dog before</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group4" type="radio"  value="3" onClick={this.handleChange}/>
+        <input name="good_with_cats" type="radio"  value="true" onClick={this.handleChange}/>
         <span>Nope, this will be my first time</span>
       </label>
     </p>
@@ -119,19 +119,19 @@ class FormPage extends Component {
     <h5>Which would be your biggest concern as a dog owner</h5>
    <p>
       <label>
-        <input name="group5" type="radio" value="1" onClick={this.handleChange}/>
+        <input name="good_with_kids" type="radio" value="true" onClick={this.handleChange}/>
         <span>Barking</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group5" type="radio" value="2" onClick={this.handleChange}/>
+        <input name="good_with_kids" type="radio" value="false" onClick={this.handleChange}/>
         <span>House training</span>
       </label>
     </p>
     <p>
       <label>
-        <input name="group5" type="radio"  value="3" onClick={this.handleChange}/>
+        <input name="good_with_kids" type="radio"  value="true" onClick={this.handleChange}/>
         <span>Aggressive tendencies</span>
       </label>
     </p>
