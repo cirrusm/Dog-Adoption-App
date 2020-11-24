@@ -76,7 +76,7 @@ console.log('these are the dogs', this.state.dogs)
   render() {
     return(
       <div className="container dogcards">
-        Index Page
+
         {/* <CarouselProvider
         naturalSlideWidth={300}
         naturalSlideHeight={500}

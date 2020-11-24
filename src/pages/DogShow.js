@@ -81,6 +81,7 @@ class DogShow extends Component {
           
           <div> <h4>{this.state.dog.name}</h4>
         
+
          <p>{this.state.dog.gender}⚫️Size: {this.state.dog.size}⚫️Age: {this.state.dog.age}</p>
     
         <p>Adoption Fee: $100</p>
@@ -108,6 +109,9 @@ class DogShow extends Component {
                <p>{this.state.dog.description}</p>
                <button className="btn orange">Schedule Visit</button>
         </div> 
+
+
+
       </div>
     );
   }

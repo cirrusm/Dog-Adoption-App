@@ -3,8 +3,10 @@ import {Link} from 'react-router-dom'
 import Background from '../images/pexels-la-miko-3671301.jpg'
 
 // let sectionStyle = {
+
 //   width: "100px",
 //   height: "100px",
+
 //   backgroundImage: 'url(' + {Background} + ')'
 // }
 
@@ -14,8 +16,6 @@ class Home extends Component {
   componentDidMount() {
     let key = 'rqgLcLaO8ZSjNJDMdqy1i19a3qZBrDVBrcGHHWF366C34RtFJN'
 let secret = 'kfQMxVox4kH2I7A56kwo1JPrJyoRuQEnxWHwfoDc'
-let org ="RI77"
-let status= "adoptable"
 let size="medium"
 let location = 92625
 let goodWithDogs = "true"
@@ -67,7 +67,9 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
   }
   render() { 
     return ( 
+
       <div className='home-body'>
+
         <div className="content">
         <h3 className="welcome">Welcome to Puppy Love</h3>
         <p className="middle-intro">We take the guess work out of finding your new companion</p>
