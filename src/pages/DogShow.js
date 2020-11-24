@@ -1,4 +1,12 @@
 import React, { Component } from "react";
+import Heart from '../images/Heart.png';
+import Arrow from '../images/Arrow.png';
+import RecSmall from '../images/rec-small.png';
+import RecMed from '../images/rec-medium.png';
+import RecLarge from '../images/rec-large.png';
+
+
+
 
 class DogShow extends Component {
   state = {
@@ -58,16 +66,51 @@ class DogShow extends Component {
 
     renderPhoto = () => {
       if (this.state.dog.photos) {
-        return this.state.dog.photos[0].medium;
+        return this.state.dog.photos[0].large;
       }
   }
 
   render() {
     return (
-      <div className = 'container'>
-        <img src={this.renderPhoto()} />
-        <h1>{this.state.dog.name}</h1>
+      <div className="profile-container">
+        <img id="heart" src={Heart} alt="" />
+        <img id="arrow" src={Arrow} alt="" />
+        <div className="basic-info">
+          <div className="row valign-wrapper">
+          <img className="profile-img" src={this.renderPhoto()} alt="" />
+          
+          <div> <h4>{this.state.dog.name}</h4>
         
+
+         <p>{this.state.dog.gender}⚫️Size: {this.state.dog.size}⚫️Age: {this.state.dog.age}</p>
+    
+        <p>Adoption Fee: $100</p>
+       </div>
+       </div>       
+        </div>
+    
+     
+      <div className="card" id="personality">
+               <h4>Personality: </h4>
+               <p>cheerful   <img src={RecLarge} alt="" /></p>
+               <p>peaceful   <img src={RecMed} alt="" /></p>
+               <p>cuddly   <img src={RecLarge} alt="" /></p>
+               <p>loud   <img src={RecSmall} alt="" /></p>
+        </div>
+       <div className="card" id="about">
+               <h4>About:</h4>
+               <p>{this.state.dog.tags}</p>
+               <p>{this.state.dog.description}</p>
+        </div>
+
+         <div className="card" id="location-bio">
+               <h4>Shelter Location: </h4>
+               <h6>Los Angeles, CA</h6>
+               <p>{this.state.dog.description}</p>
+               <button className="btn orange">Schedule Visit</button>
+        </div> 
+
+
 
       </div>
     );

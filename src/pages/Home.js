@@ -3,8 +3,10 @@ import {Link} from 'react-router-dom'
 import Background from '../images/pexels-la-miko-3671301.jpg'
 
 // let sectionStyle = {
-//   width: "100%",
-//   height: "100%",
+
+//   width: "100px",
+//   height: "100px",
+
 //   backgroundImage: 'url(' + {Background} + ')'
 // }
 
@@ -65,7 +67,9 @@ fetch('https://api.petfinder.com/v2/oauth2/token', {
   }
   render() { 
     return ( 
-      <div className="home-body">
+
+      <div className='home-body'>
+
         <div className="content">
         <h3 className="welcome">Welcome to Puppy Love</h3>
         <p className="middle-intro">We take the guess work out of finding your new companion</p>
