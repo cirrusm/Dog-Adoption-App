@@ -7,20 +7,21 @@ class IndexPage extends React.Component {
     dogs: []
   }
 
+  
 
 
+  renderDogs() {
 
-  // renderDogs() {
-
-  //   return this.state.dogs.map((dog, index) => {
-  //     <DogCards dog={dog} key={dog._id} />
-  //   });
-  // }
+    return this.state.dogs.map((dog, index) => {
+      <DogCards dog={dog} key={dog._id} />
+    });
+  }
 
 
   render() {
     return(
       <div>
+        {/* {renderDogs()} */}
         <DogCards />
       </div>
     );
