@@ -11,3 +11,114 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.row .col {
+  padding: 0;
+}
+
+#match-text {
+  color: #F28C74;
+  text-align: center;
+}
+
+.card {
+  /* display: flex;
+  flex-direction: column; */
+  background-color:#91cad8;
+  text-align: center;
+  width: 300px;
+  height: 500px;
+  margin: 0 auto;
+  padding: 0;
+  border-radius: 5%;
+}
+
+.card-content {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.card .card-image img {
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  width: 100%;
+  height: 300px;
+  border-radius: 5%;
+}
+
+.card-action {
+  font-size: 20px;
+  text-align: center;
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  /* height: fit-content; */
+  height: auto;
+}
+
+.dogcards {
+  display: flex;
+  margin: 0 auto;
+}
+
+.main-nav{
+  background-color:#4D8B99;
+}
+
+.content {
+  width: 547px;
+  position: relative;
+  top: 100px;
+  left: 200px;
+  
+}
+
+.button-orange {
+  background-color: #F28C74;
+}
+
+.carousel-buttons {
+  margin: 0 auto;
+  display: flex;
+}
+
+.carousel-back-button {
+  margin: 5px;
+
+}
+
+.carousel-next-button {
+  margin: 5px;
+  
+}
+.all-dogs-text {
+  flex-direction: column;
+}
+
+#view-all-text {
+  flex-direction: column;
+  color: #F28C74;
+  text-align: center;
+}
+
+body {
+  background: url('./images/pexels-la-miko-3671301.jpg')
+}
+
+.welcome {
+  font-family: 'Righteous', cursive;
+  font-weight: 400;
+}
+
+.middle-intro {
+  
+}
+
+.orange-font {
+  
+  color: #F28C74
+}
+
+
